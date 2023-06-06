@@ -8,18 +8,25 @@ import { SearchComponent } from './pages/search/search.component';
 import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
 import {HttpClientModule} from '@angular/common/http';
 import { MovieApiServiceService } from './service/movie-api-service.service';
+import { CategoriesComponent } from './pages/home/categories/categories.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    CategoriesComponent
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [MovieApiServiceService],
