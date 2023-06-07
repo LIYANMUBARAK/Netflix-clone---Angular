@@ -45,6 +45,7 @@ export class HomeComponent implements OnInit {
     this.comedyMoviesData()
     this.documentaryMoviesData()
     this.scienceFictionMoviesData()
+    this.thrillerMoviesData()
   }
 
   // banerData
